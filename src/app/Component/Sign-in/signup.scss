@@ -1,0 +1,159 @@
+.main-layout-create {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-image: url("../../Support/Image/SignUp.jpg");
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  
+    .form-div-main-create {
+      position: relative;
+  
+      width: 580px;
+      height: 620px;
+      background-color: #bebdbd;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .form-div-main-create::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 580px;
+      height: 620px;
+      transform-origin: bottom right;
+      background: linear-gradient(0deg, transparent, #53f821, #fa00d0);
+      animation: animate 6s linear infinite;
+    }
+    .form-div-main-create::after {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 580px;
+      height: 620px;
+      transform-origin: bottom right;
+      background: linear-gradient(0deg, transparent, #000000, #e2f10c);
+      animation: animate 6s linear infinite;
+      animation-delay: -3s;
+    }
+    @keyframes animate {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    .header-sign-create {
+      background: -webkit-linear-gradient(#cfdd09, #21f8f6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 50px;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    }
+  
+    .form-main-create {
+      position: absolute;
+      inset: 3px;
+      background-color: #111e29;
+      z-index: 10;
+      border-radius: 8px;
+      padding: 50px 40px;
+    }
+    .input-box-create input:valid ~ span,
+    .input-box-create input:focus ~ span {
+      color: #21f8f6;
+      transform: translateY(-34px);
+      font-size: 15px;
+    }
+    .input-box-create input:valid ~ i,
+    .input-box-create input:focus ~ i {
+      height: 40px;
+    }
+    .input-box-create {
+      position: relative;
+      align-items: center;
+      justify-content: center;
+      width: 460px;
+      margin-top: 40px;
+    }
+    .input-box-create input {
+      position: relative;
+      width: 100%;
+      padding: 20px 20px 10px;
+      background: transparent;
+      border-radius: 2px;
+      font-size: 1em;
+      border: none;
+      color: black;
+      border: none;
+      outline: none;
+      z-index: 12;
+    }
+  
+    .input-box-create span {
+      position: absolute;
+      left: 0;
+      padding: 20px 10px 10px;
+      font-size: 1em;
+      border: none;
+      color: #8f8f8f;
+      letter-spacing: 0.05em;
+      pointer-events: none;
+      letter-spacing: 0.05em;
+      transition: 0.5s;
+    }
+  
+    .input-box-create i {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #21f8f6;
+      border-radius: 2px;
+      pointer-events: none;
+      transition: 0.5s;
+      z-index: 9;
+    }
+    .links-signup-create {
+      position:absolute;
+      right: 0;
+      padding: 30px 20px;
+    }
+  
+    .links-signup-create a {
+      margin: 10px 0px;
+      font-size: 1em;
+      color: #8f8f8f;
+      text-decoration: none;
+    }
+  
+    .links-signup-create a:hover {
+      color: #cfdd09;
+      font-size: 20px 0;
+    }
+  
+    .create-login{
+margin-top: 50px;
+    input[type="submit"] {
+        border: none;
+        outline: none;
+        background-color: #21f8f6;
+        padding: 11px 25px;
+        width: 50%;
+        font-weight: 600;
+        margin-top: 10px;
+      }
+    }
+  }
+  
