@@ -1,0 +1,51 @@
+.grid-style-card{
+    display: flex;
+    flex-direction: row;
+    
+}.home-body{
+    font-size: 40px;
+   text-transform: uppercase;
+
+}
+.card-style{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 300px;
+    border: solid;
+}
+.content-ui{
+   // position: absolute;
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border: solid;
+
+}
+.content-inside{
+    display:flex;
+    flex-direction: column;
+    margin: 50px;
+    .delete-icon{
+        display: flex;
+    justify-content: space-between;
+    .button-col{
+        background: transparent;
+        border: transparent;
+       
+    }
+    }
+}
+.list-todo{
+    margin: 10px;
+}
+.date-picker{
+    display: flex;
+    justify-content: center;
+}
+.CreateTask{
+    margin: 20px;
+}

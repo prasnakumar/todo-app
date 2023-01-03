@@ -25,7 +25,7 @@ function SignUp() {
           </div>
           <div className="input-box-create">
             <input type="password" required={true} />
-            <span>Password</span>
+            <span>Confirm Password</span>
             <i></i>
           </div>
       
